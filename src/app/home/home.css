@@ -1,0 +1,96 @@
+.home-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+.home-banner img, .home-content {
+	border-radius: 10px;
+	max-width: 500px;
+}
+.home-banner img {
+	width: 100%;
+}
+.home-content {
+	background: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+	box-shadow: none !important;
+}
+.signup-btn {
+	background: #6FBC5B;
+	color: #fff;
+	border: none;
+	padding: 0.75rem 2rem;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+	margin-top: 1.5rem;
+}
+.signup-btn:hover { background: #5aa946; }
+@media (min-width: 900px) {
+	.home-main {
+		flex-direction: row;
+		gap: 1.5rem;
+		min-height: 420px;
+		align-items: flex-start;
+	}
+	.home-banner img, .home-content {
+		max-width: 420px;
+	}
+	.home-content {
+		margin: 0;
+		height: auto;
+		text-align: center;
+		box-shadow: none !important;
+	}
+}
+
+.home-banner {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.home-banner img {
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.home-content {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.home-content h2 {
+	margin-bottom: 1rem;
+	color: #333;
+}
+.home-content p {
+	margin-bottom: 2rem;
+	color: #555;
+}
+.signup-btn {
+	background: #6FBC5B;
+	color: #fff;
+	border: none;
+	padding: 0.75rem 2rem;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.signup-btn:hover {
+	background: #5aa946;
+}
+
+

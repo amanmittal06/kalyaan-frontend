@@ -1,0 +1,27 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="signup-form">
+	<button type="button" class="back-btn" (click)="goBack()">&larr; Back</button>
+	<label>
+		Name
+		<input formControlName="name" type="text" />
+		<span *ngIf="form.get('name')?.touched && form.get('name')?.hasError('required')" class="error">Name is required</span>
+		<span *ngIf="form.get('name')?.touched && form.get('name')?.hasError('pattern')" class="error">
+			Name must be 1-3 words, each starting with uppercase followed by lowercase, separated by single space.
+		</span>
+	</label>
+	<label>
+		Email
+		<input formControlName="email" type="email" />
+		<span *ngIf="form.get('email')?.touched && form.get('email')?.invalid" class="error">Valid email is required</span>
+	</label>
+	<label>
+		Password
+		<input formControlName="password" type="password" />
+		<span *ngIf="form.get('password')?.touched && form.get('password')?.hasError('required')" class="error">Password is required</span>
+		<span *ngIf="form.get('password')?.touched && form.get('password')?.hasError('minlength')" class="error">Password must be at least 8 characters</span>
+	</label>
+	<button type="submit">Sign Up</button>
+	<div class="login-link">
+		Already have an account?
+		<button type="button" (click)="login()">Login</button>
+	</div>
+</form>

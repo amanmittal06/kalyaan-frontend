@@ -1,0 +1,64 @@
+.back-btn {
+	background: none;
+	border: none;
+	color: #6FBC5B;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	text-align: left;
+}
+.login-link {
+	margin-top: 1.5rem;
+	text-align: center;
+}
+.login-link button {
+	background: none;
+	border: none;
+	color: #6FBC5B;
+	cursor: pointer;
+	font-weight: 500;
+	margin-left: 0.3rem;
+}
+
+.signup-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	max-width: 350px;
+	margin: 2rem auto;
+	padding: 2rem 1rem;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.signup-form label {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	color: #333;
+}
+.signup-form input {
+	margin-top: 0.3rem;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+.signup-form button[type="submit"] {
+	background: #6FBC5B;
+	color: #fff;
+	border: none;
+	padding: 0.75rem;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.signup-form button[type="submit"]:hover {
+	background: #5aa946;
+}
+.error {
+	color: #d32f2f;
+	font-size: 0.9rem;
+	margin-top: 0.2rem;
+}
